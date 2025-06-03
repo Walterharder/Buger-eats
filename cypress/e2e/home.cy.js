@@ -1,8 +1,37 @@
+import Home from "../support/pages/home"
+import Cadastro from "../support/pages/cadastro"
 
 describe('home page', () => {
-    it('App deve estar online', () => {
-        //cy.viewport(1440, 900)
-        cy.visit('https://buger-eats.vercel.app')
-        cy.get('#page-home main h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats')
+    let homeData;
+
+    before(() => {
+        cy.fixture('homeData').then(data => {
+            homeData = data
+        })
+    });
+
+    beforeEach(() => {
+        Home.accessHome()
+    })
+
+    it('Validar o título do app.', () => {
+        Home.validateTitle(homeData.title)
+    })
+
+    it('Validar o subtítulo do app. ', () => {
+        Home.validateWelcomeHome(homeData.welcomeHome)
+    })
+
+    it('Validar a frase do app.', () => {
+        Home.validatePhrase(homeData.phrase)
+    })
+
+    it('Validar o botão de Cadastre-se.', () => {
+        Home.validateButtonRegister(homeData.buttonRegister)
+    })
+
+    it('Validar o direcionamento do botão Cadastre-se.', () => {
+        Home.clickButtonRegister()
+        Cadastro.validateAccessRegister()
     })
 })

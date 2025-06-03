@@ -1,0 +1,20 @@
+export const ELEMENTS = {
+    inputName: 'input[name="name"]',
+    inputCPF: 'input[name="cpf"]',
+    inputEmail: 'input[name="email"]',
+    inputWhatsapp: 'input[name="whatsapp"]',
+    inputPostalcode: 'input[name="postalcode"]',
+    buttonCep: 'input[type=button][value="Buscar CEP"]',
+    inputAdress: 'input[name="address"]',
+    inputAddressNumber: 'input[name="address-number"]',
+    inputAddressDetails: 'input[name="address-details"]',
+    inputDistrict: 'input[name="district"]',
+    inputCityUf: 'input[name="city-uf"]',
+    inputImage: 'input[accept^="image"]',
+    deliveryMoto: '.delivery-method li',
+    deliveryBicicleta: '.delivery-method li',
+    deliveryCarro: '.delivery-method li',
+    buttonRegister: '.button-success',
+    messageSuccess: '#swal2-html-container',
+    buttonConfirm: '.swal2-confirm'
+}

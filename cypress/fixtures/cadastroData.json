@@ -1,0 +1,16 @@
+{
+  "name": "Walter Mateus",
+  "cpf": "82308380039",
+  "email": "waltermateus@teste.com",
+  "whatsapp": "11985858585", 
+  "cep": "04534011",
+  "address": "Rua Joaquim Floriano",
+  "number": "1000",
+  "complemento": "Ap 142",
+  "bairro": "Itaim Bibi",
+  "cidade_uf": "São Paulo/SP",
+  "entregaMoto": "Moto", 
+  "cnh":"Nova-CNH_2.jpg",
+  "messageSucesso": "Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.",
+  "messageErro": "tanana"
+}

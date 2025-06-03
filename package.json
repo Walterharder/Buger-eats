@@ -4,7 +4,9 @@
   "description": "Cypress direto ao ponto",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "cyOpen": "cypress open",
+    "cyRun": "cypress open run",
+    "cuRunReport": "cypress run --reporter mochawesome"
   },
   "author": "Walter Mateus",
   "license": "MIT",
