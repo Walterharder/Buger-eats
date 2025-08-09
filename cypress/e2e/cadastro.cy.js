@@ -113,7 +113,7 @@ describe('Cadastro', () => {
         cy.validade_sessionEndereco(cadastroData.address, cadastroData.cidade_uf, cadastroData.bairro)
     })
 
-    //Bug do site, permite enviar o fiormulário com o e-mail incorreto.
+    //Bug do site, permite enviar o formulário com o e-mail incorreto.
     it('Validar cadastro com E-mail inválido.', () => {
         const userName = faker.internet.userName();
         const invalidEmailBadDomain = `${userName}@.com`;
