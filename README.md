@@ -1,16 +1,16 @@
-# Buger Eats - Cypress
+# 📋 Buger Eats - Cypress
 
 Esse é um projeto prático direto ao ponto de Cypress Discovery Degustação com o Papito.
 Nesse projeto eu adicionei mais alguns cenários de testes e também trabalhei com o faker para auxiliar criação de dados. 
 
-## Pré-requisitos
+## ⚙️ Pré-requisitos
 
 ```bash
 - Node.js
 - npm 
 ```
 
-## Instalação
+## ⚙️ Instalação
 
 ```
 # Instale as dependências.
@@ -29,7 +29,7 @@ npm install mochawesome
 npm install cypress-docgen
 ```
 
-## Execução dos testes ]
+## 🚀 Execução dos testes ]
 
 ```
 # Para abrir o Cypress no modo interativo.
@@ -45,7 +45,7 @@ npx cypress run --reporter mochawesome
 npx cypress-docgen
 ```
 
-## Tests
+## 💡 Testes
 
 ### Home
 - ✅ Validar o título do app.
