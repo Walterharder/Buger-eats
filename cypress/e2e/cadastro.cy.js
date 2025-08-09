@@ -165,7 +165,7 @@ describe('Cadastro', () => {
         cy.validade_messageSuccess(cadastroData.messageSucesso)
     })
 
-    it.only('Validar envio de arquivo PDF em Foto da CNH.', () => {
+    it('Validar envio de arquivo PDF em Foto da CNH.', () => {
         cy.validade_errorExcecao()
 
         cy.fill_sessionDados(dataFaker.name, faker.string.numeric(11), dataFaker.email, dataFaker.whatsapp)
@@ -174,7 +174,7 @@ describe('Cadastro', () => {
         cy.fill_arquivoValidacao(cadastroData.pdf, cadastroData.cnhRequired)
     })
 
-    it.only('Validar envio de arquivo CSV em Foto da CNH.', () => {
+    it('Validar envio de arquivo CSV em Foto da CNH.', () => {
         cy.validade_errorExcecao()
 
         cy.fill_sessionDados(dataFaker.name, faker.string.numeric(11), dataFaker.email, dataFaker.whatsapp)
