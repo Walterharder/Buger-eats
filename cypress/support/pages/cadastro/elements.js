@@ -11,10 +11,17 @@ export const ELEMENTS = {
     inputDistrict: 'input[name="district"]',
     inputCityUf: 'input[name="city-uf"]',
     inputImage: 'input[accept^="image"]',
-    deliveryMoto: '.delivery-method li',
-    deliveryBicicleta: '.delivery-method li',
-    deliveryCarro: '.delivery-method li',
+    deliveryMoto: 'img[alt="Moto"]',
+    deliveryBicicleta: 'img[alt="Bicicleta"]',
+    deliveryCarro: 'img[alt="Van/Carro"]',
     buttonRegister: '.button-success',
     messageSuccess: '#swal2-html-container',
-    buttonConfirm: '.swal2-confirm'
+    buttonConfirm: '.swal2-confirm',
+    messageNameRequired: 'input[name="name"] + .alert-error',
+    messageCPFerror: 'input[name="cpf"] + .alert-error',
+    messageEmailRequired: 'input[name="email"] + .alert-error',
+    messageCEPRequired: 'input[name="postalcode"] + .alert-error',
+    messageAddressNumberRequired: 'input[name="address-number"] + .alert-error',
+    messageDeliveryRequired: '.delivery-method + .alert-error',
+    messageCNHRequired: '.dropzone + .alert-error'
 }

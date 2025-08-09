@@ -1,24 +1,76 @@
-Buger Eats - Cypress
-Esse é um projeto prático direto ao ponto, Cypress Discovery Degustação com o Papito.
+# Buger Eats - Cypress
 
-Pré-requisitos
-Foi necessário ter Node.js e npm instalados para executar este projeto.
+Esse é um projeto prático direto ao ponto de Cypress Discovery Degustação com o Papito.
+Nesse projeto eu adicionei mais alguns cenários de testes e também trabalhei com o faker para auxiliar criação de dados. 
 
-Usei as versões v16.13.2 e 8.3.0 do Node.js e npm, respectivamente.
+## Pré-requisitos
 
+```bash
+- Node.js
+- npm 
+```
 
-Instalação
-Execute npm install (ou npm i para a versão curta) para instalar as dependências de desenvolvimento.
+## Instalação
 
-Execute npm install cypress-file-upload --save -dev para instalar as dependências de upload de arquivos.
+```
+# Instale as dependências.
+npm install
 
+# Instale as dependências de Upload de Arquivos.
+npm install cypress-file-upload
 
-Testes
-Você pode executar os testes pelos scripts que foram adicionados ao projeto.
+# Instale as dependências do Faker.
+npm install @faker-js/faker
 
-Execute npm run cy:open para abrir o Cypress no modo interativo em uma viewport desktop.
+# Instale as dependências do Mochawesome.
+npm install mochawesome
 
-Ou execute npm test para executar o teste no modo headless.
+# Instale as dependências do Doc-gen.
+npm install cypress-docgen
+```
 
-Observação
-Esse projeto ainda irei aperfeiçoar de acordo com outros conhecimentos que obtive durante estudos.
+## Execução dos testes ]
+
+```
+# Para abrir o Cypress no modo interativo.
+npx cypress open
+
+# Para executar o teste no modo headless.
+npx cypress run
+
+# Para executar o teste e gerar o Report Mochawesome.
+npx cypress run --reporter mochawesome
+
+# Para gerar o arquivo de Doc-gen dos testes.
+npx cypress-docgen
+```
+
+## Tests
+
+### Home
+- ✅ Validar o título do app.
+- ✅ Validar o subtítulo do app.
+- ✅ Validar a frase do app.
+- ✅ Validar o botão de Cadastre-se.
+- ✅ Validar o direcionamento do botão Cadastre-se.
+
+### Cadastro
+- ✅ Validar acesso a tela de Cadastro
+- ✅ Validar o campo Nome Completo como obrigatório.
+- ✅ Validar o campo CPF como obrigatório.
+- ✅ Validar o campo E-mail como obrigatório.
+- ✅ Validar o campo CEP como obrigatório.
+- ✅ Validar o campo Número como obrigatório.
+- ✅ Validar o campo Método de Entrega como obrigatório.
+- ✅ Validar o campo Foto da CNH como obrigatório.
+- ✅ Validar o campo CPF com 12 dígitos.
+- ✅ Validar o campo CPF com 10 dígitos.
+- ✅ Validar o cadastro apenas com campos obrigatórios informados.
+- ✅ Validar cadastro com CPF inválido.
+- ✅ Validar a busca por CEP.
+- ✅ Validar cadastro com E-mail inválido.
+- ✅ Validar cadastro com método de entrega Moto.
+- ✅ Validar cadastro com método de entrega Bicicleta.
+- ✅ Validar cadastro com método de entrega Van/Carro.
+- ✅ Validar envio de arquivo PDF em Foto da CNH.
+- ✅ Validar envio de arquivo CSV em Foto da CNH.

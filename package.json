@@ -5,13 +5,21 @@
   "main": "index.js",
   "scripts": {
     "cyOpen": "cypress open",
-    "cyRun": "cypress open run",
-    "cuRunReport": "cypress run --reporter mochawesome"
+    "cuRunReport": "cypress run --reporter mochawesome",
+    "docgen": "npx cypress-docgen"
   },
   "author": "Walter Mateus",
   "license": "MIT",
   "devDependencies": {
+    "@bahmutov/cy-grep": "^2.0.35",
     "cypress": "^13.15.0",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-docgen": "^1.0.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-plugin-grep-boxes": "^1.1.1",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "faker-br": "^0.4.1"
   }
 }
