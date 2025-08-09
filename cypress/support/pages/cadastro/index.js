@@ -1,4 +1,3 @@
-import { faker } from '@faker-js/faker';
 import { ELEMENTS } from './elements';
 const el = ELEMENTS;
 
