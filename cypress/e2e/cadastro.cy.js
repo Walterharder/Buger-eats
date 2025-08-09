@@ -129,7 +129,7 @@ describe('Cadastro', () => {
         Cadastro.fillWhatsapp(dataFaker.whatsapp)
         cy.fill_sessionEndereco(cadastroData.cep, faker.string.numeric(2), faker.lorem.word(5))
         cy.validade_sessionEndereco(cadastroData.address, cadastroData.cidade_uf, cadastroData.bairro)
-        cy.fill_entregaMoto(cadastroData.entregaMoto, cadastroData.cnh)
+        cy.fill_entregaMoto(cadastroData.cnh)
         cy.validade_emailInvalid(invalidEmailBadDomain, cadastroData.invalidEmailBadDomain)
         cy.validade_emailInvalid(invalidEmailNoAt, cadastroData.invalidEmailNoAt)
         cy.validade_emailInvalid(invalidEmailWithComma, cadastroData.invalidEmailWithComma)
@@ -145,7 +145,7 @@ describe('Cadastro', () => {
         cy.fill_sessionDados(dataFaker.name, faker.string.numeric(11), dataFaker.email, dataFaker.whatsapp)
         cy.fill_sessionEndereco(cadastroData.cep, faker.string.numeric(2), faker.lorem.word(5))
         cy.validade_sessionEndereco(cadastroData.address, cadastroData.cidade_uf, cadastroData.bairro)
-        cy.fill_arquivoValidacao(cadastroData.cnh)
+        cy.fill_entregaMoto(cadastroData.cnh)
         cy.validade_messageSuccess(cadastroData.messageSucesso)
     })
 
